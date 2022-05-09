@@ -1,0 +1,42 @@
+.footer-menu {
+  padding: 70px 0 55px;
+  background-color: $white;
+
+  &__list {
+    column-count: 4;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+.footer-middle {
+  padding: 35px 0;
+  background-color: $silver-bd;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    margin-right: 75px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  background-color: $dark-blue;
+  color: $silver;
+}

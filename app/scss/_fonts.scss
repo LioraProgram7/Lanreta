@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src:
+    local('OpenSans-Regular'),
+    url('../fonts/OpenSans-Regular.woff2'),
+    url('../fonts/OpenSans-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans_Condensed-Light';
+  src:
+    local('OpenSans_Condensed-Light'),
+    url('../fonts/OpenSans_Condensed-Light.woff2'),
+    url('../fonts/OpenSans_Condensed-Light.woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src:
+    local('OpenSans-Bold'),
+    url('../fonts/OpenSans-Bold.woff2'),
+    url('../fonts/OpenSans-Bold.woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src:
+    local('OpenSans-ExtraBold'),
+    url('../fonts/OpenSans-ExtraBold.woff2'),
+    url('../fonts/OpenSans-ExtraBold.woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Regular';
+  src:
+    local('Rubik-Regular'),
+    url('../fonts/Rubik-Regular.woff2'),
+    url('../fonts/Rubik-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  src:
+    local('Rubik-Medium'),
+    url('../fonts/Rubik-Medium.woff2'),
+    url('../fonts/Rubik-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  src:
+    local('Rubik-Bold'),
+    url('../fonts/Rubik-Bold.woff2'),
+    url('../fonts/Rubik-Bold.woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

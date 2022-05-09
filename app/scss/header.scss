@@ -1,0 +1,85 @@
+.header-top {
+  padding: 42px 0 22px;
+  background-color: $blue-01;
+}
+
+.menu {
+  margin-left: 33px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 60px;
+  }
+
+  &__link {
+    @extend %opensans-400;
+    color: $white;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.header-bottom {
+  background-color: $white;
+  padding: 40px 0 20px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    max-width: 150px;
+    width: 100%;
+    padding-left: 48px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__item--glass {
+    max-width: 105px;
+  }
+
+  &__item--window::after {
+    background-image: url('../images/icons/sliding-door1.png');
+  }
+
+  &__item--glass::after {
+    background-image: url('../images/icons/sliding-door2.png');
+  }
+
+  &__item--doors::after {
+    background-image: url('../images/icons/sliding-door3.png');
+  }
+
+  &__link {
+    @extend %opensans-800;
+    font-size: 14px;
+    color: $dark-08;
+  }
+}
+
