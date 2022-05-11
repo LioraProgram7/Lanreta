@@ -11,7 +11,6 @@
 
   &__info {
     padding: 110px 0 140px;
-    margin-right: 30px;
   }
 
   &__title {
@@ -33,6 +32,8 @@
   }
 
   &__service {
+    display: inherit;
+    align-items: flex-end;
     max-width: 602px;
     width: 100%;
     overflow: hidden;
@@ -42,5 +43,45 @@
     @extend %bg-img;
     object-fit: contain;
     transform: translateY(14px);
+  }
+}
+
+@media (max-width: $lg) {
+  .specialists {
+    padding-top: 50px;
+
+    &__info {
+      padding: 30px 0 10px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: $mm) {
+  .specialists {
+    &__service {
+      display: none;
+    }
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__title {
+      max-width: 100%;
+      font-size: 26px;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
   }
 }

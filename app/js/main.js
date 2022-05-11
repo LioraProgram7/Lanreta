@@ -2,10 +2,11 @@ $(function () {
 
     $('.menu__burger, .menu a').on('click', function () {
       $('.menu__list, .menu__burger').toggleClass('active');
+      $('body').toggleClass('overflow');
     });
 
 
-    
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');

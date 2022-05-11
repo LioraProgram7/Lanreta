@@ -3,7 +3,9 @@
   background-color: $white;
 
   &__container {
-    column-count: 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
   }
 
   &__item {
@@ -17,10 +19,10 @@
     color: $default;
   }
 
-   &__link--darc {
-     @extend %opensans-800;
-     color: $black-02;
-   }
+  &__link--darc {
+    @extend %opensans-800;
+    color: $black-02;
+  }
 }
 
 .footer-middle {
@@ -48,4 +50,53 @@
   padding: 20px 0;
   background-color: $dark-blue;
   color: $silver;
+}
+
+
+@media (max-width: $lg) {
+  .footer-menu {
+    text-align: center;
+    padding: 55px 0;
+
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+  }
+
+  .footer-middle {
+    &__list {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+@media (max-width: $md) {
+  .footer-middle {
+    padding: 25px 0;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__list,
+    &__logo {
+      margin: 0;
+    }
+
+    &__list {
+      margin: 10px 0;
+    }
+  }
+}
+
+
+@media (max-width: $sm) {
+  .footer-menu {
+    &__container {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+    }
+  }
 }

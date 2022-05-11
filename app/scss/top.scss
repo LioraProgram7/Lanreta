@@ -15,3 +15,22 @@
 }
 
 // breadcrumbs in the gloobal 
+
+@media (max-width: $xxl) {
+  .top {
+    background-position: inherit;
+    background-size: cover;
+  }
+}
+
+
+@media (max-width: $lg) {
+  .top {
+    padding: 60px 0 25px;
+
+    &__title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}

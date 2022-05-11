@@ -11,7 +11,12 @@ body {
   line-height: 1.2;
   display: flex;
   flex-direction: column;
+
+  &.overflow {
+    overflow: hidden;
+  }
 }
+
 
 .main {
   flex-grow: 1;
@@ -155,37 +160,22 @@ body {
 }
 
 @media (max-width: $lg) {
-  .logo {
-    width: 110px;
+  .contacts {
+    &__phone {
+      margin-bottom: 0;
+    }
   }
 }
 
 
 @media (max-width: $md) {
-  .logo {
-    display: none;
-  }
-
   .logo-white {
     display: block;
-  }
-
-  .contacts {
-    flex-direction: initial;
-    align-items: center;
-
-    &__phone {
-      margin-bottom: 0;
-      margin-right: 30px;
-    }
   }
 }
 
 @media (max-width: $sm) {
-  .contacts {
-    &__phone {
-      font-size: 14px;
-      margin-right: 20px;
-    }
+  .pagination {
+    padding-top: 0;
   }
 }
