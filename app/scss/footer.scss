@@ -16,8 +16,12 @@
     @extend %opensans-400;
     color: $default;
   }
-}
 
+   &__link--darc {
+     @extend %opensans-800;
+     color: $black-02;
+   }
+}
 
 .footer-middle {
   padding: 35px 0;
