@@ -8,10 +8,9 @@ body {
   background-color: $silver-bd;
   color: $default;
   font-size: 14px;
+  line-height: 1.2;
   display: flex;
   flex-direction: column;
-  // line-height: 1.5;
-  // letter-spacing: 0.03em;
 }
 
 .main {
@@ -19,7 +18,7 @@ body {
 }
 
 [class*="__container"] {
-  max-width: 1217px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -45,3 +44,36 @@ body {
     color: $silver;
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    font-size: 18px;
+    color: $black-02;
+  }
+
+  &__link--active {
+    @extend %opensans-700;
+    margin: 0 15px;
+    position: relative;
+
+    &::before {
+      content: '.';
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+    }
+  }
+}
+

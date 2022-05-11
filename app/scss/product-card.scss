@@ -1,0 +1,207 @@
+.product-card {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  background-color: $white;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  &__sidebar {
+    max-width: 50px;
+    width: 100%;
+    @extend %rubik-500;
+    padding: 18px;
+    background-color: $blue-01;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+    letter-spacing: 0.2em;
+  }
+
+  &__reccomend {
+    color: $white;
+  }
+
+  &__photo {
+    max-width: 240px;
+    width: 100%;
+    padding: 20px 40px;
+    overflow: hidden;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  &__inner {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 5px 20px;
+    margin-right: -5px;
+  }
+
+  &__title {
+    @extend %rubik-700;
+    font-size: 30px;
+    color: $black-02;
+    margin-bottom: 20px;
+
+    span {
+      @extend %rubik-400;
+      color: $silver;
+      margin-left: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  &__info {
+    max-width: 130px;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__info--yellow {
+    background-color: #fff0d8;
+  }
+
+  &__info--orange {
+    background-color: #ffe4dd;
+  }
+
+  &__info--blue {
+    background-color: #e9ecfc;
+  }
+
+  &__progress {
+    display: block;
+    position: absolute;
+    height: 5px;
+    border-radius: 2px;
+  }
+
+  &__progress--yellow {
+    background-color: #ffb33a;
+  }
+
+  &__progress--orange {
+    background-color: #ff8135;
+  }
+
+  &__progress--blue {
+    background-color: #b3bcea;
+  }
+
+  &__name {
+    font-size: 12px;
+    color: $silver;
+  }
+
+  &__aside {
+    max-width: 265px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $blue-01;
+    color: $white;
+    text-align: center;
+    padding: 40px 30px 30px;
+
+  }
+
+  &__desc {
+    @extend %opensans-800;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  &__sale {
+    @extend %opensans-400;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__price {
+    @extend %opensans-800;
+    font-size: 36px;
+
+    span {
+      @extend %opensans-400;
+    }
+  }
+
+
+  // product-card 2
+
+  &__inner--two {
+    border-right: 1px solid #e2e2e2;
+  }
+
+  &__sidebar--white {
+    background-color: $white;
+  }
+
+  &__new {
+    color: $blue-01
+  }
+
+  &__aside--two {
+    background-color: $white;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__price--two {
+    color: $black-02;
+    margin-bottom: 30px;
+  }
+
+  &__more {
+    @extend %none-btn;
+    @extend %opensans-800;
+    max-width: 145px;
+    width: 100%;
+    height: 45px;
+    font-size: 12px;
+    color: $black-02;
+    text-transform: uppercase;
+    border: 2px solid $blue-01;
+    border-radius: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+}
+
+
+
+
