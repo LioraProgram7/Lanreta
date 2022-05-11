@@ -45,6 +45,44 @@ body {
   }
 }
 
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: start;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 46px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 14px;
+      top: 4px;
+      right: 22px;
+      background-color: $white;
+    }
+
+    &:last-child::before {
+      display: none;
+    }
+  }
+
+  &__link {
+    @extend %opensans-400;
+    font-size: 14px;
+    color: $white;
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -77,3 +115,27 @@ body {
   }
 }
 
+.btn-blue {
+  display: inline-block;
+  max-width: 230px;
+  width: 100%;
+  height: 60px;
+  padding: 23px 10px;
+  @extend %opensans-800;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue-01;
+  box-shadow: 0px 10px 10px 0px rgba(1, 107, 181, 0.3);
+  border-radius: 50px;
+  text-align: center;
+  transition: color 0.4s, background-color 0.4s;
+  margin-bottom: 20px;
+
+  &:hover {
+    background-color: $white;
+    color: $blue-01;
+  }
+}
