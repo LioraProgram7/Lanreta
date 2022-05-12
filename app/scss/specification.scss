@@ -1,0 +1,32 @@
+.specification {
+  padding: 40px 0 70px;
+
+  &__title {
+    @extend %opensans-800;
+    font-size: 36px;
+    color: $black-02;
+    padding-bottom: 43px;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 3px;
+      background-color: $blue-01;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.875;
+    color: $default;
+  }
+
+  &__paragraph:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
