@@ -128,12 +128,13 @@ body {
 }
 
 .btn-blue {
-  display: inline-block;
+  display: inline-block; 
+  @extend %opensans-800;
+  @extend %none-btn;
   max-width: 230px;
   width: 100%;
   height: 60px;
   padding: 23px 10px;
-  @extend %opensans-800;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.2em;
