@@ -1,9 +1,9 @@
 $(function () {
 
-    $('.menu__burger, .menu a').on('click', function () {
-      $('.menu__list, .menu__burger').toggleClass('active');
-      $('body').toggleClass('overflow');
-    });
+  $('.menu__burger, .menu a').on('click', function () {
+    $('.menu__list, .menu__burger').toggleClass('active');
+    $('body').toggleClass('overflow');
+  });
 
 
 

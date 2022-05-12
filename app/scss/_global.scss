@@ -17,7 +17,6 @@ body {
   }
 }
 
-
 .main {
   flex-grow: 1;
 }
@@ -128,7 +127,7 @@ body {
 }
 
 .btn-blue {
-  display: inline-block; 
+  display: inline-block;
   @extend %opensans-800;
   @extend %none-btn;
   max-width: 230px;
@@ -146,6 +145,7 @@ body {
   text-align: center;
   transition: color 0.4s, background-color 0.4s;
   margin-bottom: 20px;
+  cursor: pointer;
 
   &:hover {
     background-color: $white;

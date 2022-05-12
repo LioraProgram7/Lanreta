@@ -30,3 +30,22 @@
     margin-bottom: 40px;
   }
 }
+
+
+@media (max-width: $xl) {
+  .specification {
+    &__title {
+      font-size: 30px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .specification {
+    &__title {
+      font-size: 25px;
+    }
+  }
+}
